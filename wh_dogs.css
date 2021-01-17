@@ -1,0 +1,39 @@
+.headline {
+  font: 24px;
+  justify-content: center;
+}
+
+#content1 p {
+  color: blue;
+}
+
+#content1 {
+  margin-bottom: 700px;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 100%;
+  position: relative;
+}
